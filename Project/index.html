@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="cart-container"><span class=" fa fa-shopping-cart" ></span>
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+        </div>
+    </div>
+    <div class="product">
+        <h1>Product Name:Kanjeevaram Silk Sarees</h1>
+
+        <div class="product-image-container">
+            <img id="productImage" src ="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQuWcbsfAnR-OBSwO-yjOZdRHwcnc8sV7ZqL5WOOl_X9W997WPLC_i61ouCC4hF_0Jjs8BJDZWis-no7ZtFh1VA5xhklDsHrjJTY00SvDelZXusbLzhSWWa" onclick="clicking(this)" alt="" > 
+        </div>
+
+        <div class="variant-selector">
+            <div class="features">
+                <img src="https://vastrakaala.com/cdn/shop/files/photo_5390926595436433341_y.jpg?v=1720853912&width=700" onclick="clicking(this)" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTPYDrtNAFCFdWJjK3UlzOMUoHeWXZEhtCYPVGsHG7vcopG3lKZpHwwxZE2FXOqeuZRP-BlZ_LLjY02BI2ZzrML4SG7GGVwcaEjiwdR5ArZUtyirsdbuooh" onclick="clicking(this)" alt="">
+                <img src="https://lajreedesigner.com/cdn/shop/products/ShrijiAvadh-Sahityasilk-Maroon_1_900x1350_crop_center@2x.jpg?v=1669794549" onclick="clicking(this)" alt="">
+            </div>
+            <div class="color">
+                <label id="color">Choose Color:</label>
+                <select id="colorSelect">
+                    <option data-img="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQuWcbsfAnR-OBSwO-yjOZdRHwcnc8sV7ZqL5WOOl_X9W997WPLC_i61ouCC4hF_0Jjs8BJDZWis-no7ZtFh1VA5xhklDsHrjJTY00SvDelZXusbLzhSWWa" data-price="110">Black-$110
+                    </option>
+                    <option value="red" data-img="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQa8Z6luL6618CH5_DH5G2Elct_UIVU9NxkV2B7S9mSo-G0JgRRY2OE-FtZuCSqdUHSep4H2Ilh1Ul3ZNeB7LvE_8ZUOhvYUzRO3hXgqhxe" data-price="120">Pink - $120</option>
+                    <option value="blue" data-img="https://ekaya.in/cdn/shop/files/EKAYABANARASJ87AN1998854300989098722009242460copy.webp?v=1711957476&width=360" data-price="130">Blue - $130</option>
+                    <option value="green" data-img="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTPYDrtNAFCFdWJjK3UlzOMUoHeWXZEhtCYPVGsHG7vcopG3lKZpHwwxZE2FXOqeuZRP-BlZ_LLjY02BI2ZzrML4SG7GGVwcaEjiwdR5ArZUtyirsdbuooh" data-price="140">Green - $140</option>
+                </select>
+            </div>
+        </div>
+        
+
+        <p id="price">Price: $110</p>
+
+        <div class="quantity-selector">
+            <h3>Choose Quantity:</h3>
+            
+            <input type="number" id="quantity" value="1" min="1" max="10">
+           
+        </div>
+
+        <button id="btn">
+            <span class=" fa fa-shopping-cart" ></span>
+            Add to Cart
+        </button>
+        
+        
+        <div id="rating-container">
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="selectedRating">Rating: 0 stars</p>
+        </div>
+
+        <div id="reviews-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+        
+   
+</body>
+</html>
